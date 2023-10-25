@@ -122,6 +122,17 @@ svg {
 
 
 /* utily classes */
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .text-primary-400{
     color: var(--clr-primary-400);
 }
@@ -241,4 +252,40 @@ body{
 .button[data-type="inverted"]:focus-visible{
   background-color: var(--clr-Neutral-100);
   color: var(--clr-accent-300);
+}
+
+/* navigation */
+
+.primary-header{
+margin-top: var(--size-700);
+display: flex;
+}
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav-toggle{
+  display: none;
+}
+
+@media (max-width:50em) {
+  .primary-navigation{
+    display: none;
+  }
+  .primary-navigation[data-visible]{
+    display: block;
+    position: fixed;
+  }
+  .mobile-nav-toggle{
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0.5em;
+    }
+    
+    .mobile-nav-toggle .icon-close{
+      display: none;
+    }
 }
