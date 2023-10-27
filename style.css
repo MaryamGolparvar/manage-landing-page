@@ -151,7 +151,21 @@ svg {
 :where(.flow :not(:first-child)) {
   margin-top: var(--flow-spacer, 3em);
 }
+.text-center{
+  text-align: center;
+}
+.text-center p{
+ margin-inline: auto;
+}
+@media (max-width: 50em) {
+  .text-center-sm-only p{
+   margin-inline: auto;
+   }
 
+  .text-center-sm-only{
+    text-align: center;
+  }
+}
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -232,7 +246,9 @@ svg {
 .padding-block-700 {
   padding-block: var(--size-700);
 }
-
+.margin-block-700{
+margin-block-end: var(--size-700);
+}
 /* general styling */
 body {
   font-size: var(--fs-body);
@@ -285,7 +301,7 @@ p[data-width="wide"] {
 .numbered-items {
   counter-reset: count;
   margin-inline: auto;
-  width: fit-content;
+ width: fit-content;
 }
 .numbered-items li {
   counter-increment: count;
