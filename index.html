@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,13 +11,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Vite App</title>
+    <title>manage webpage</title>
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#"><img src="images/logo.svg" alt="manage logo" /></a>
+          <a href="#">
+            <svg class="icon" width="146" height="24">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+          </a>
           <button
             class="mobile-nav-toggle"
             aria-controls="primary-navigation"
@@ -160,17 +164,41 @@
       </section>
     </main>
 
-    <footer class="bg-Neutral-900 text-Neutral-100">
+    <footer class=" primary-footer | padding-block-700 bg-Neutral-900 text-Neutral-100">
       <div class="container">
-        <div class="even-columns">
+        <div class="primary-footer-wrapper |even-columns">
           <div>
-            <a href="#"><img src="images/logo.svg" alt="logo image" /></a>
-            <ul role="list" aria-label="social links">
-              <li><a aria-label="faceBook" href="#"></a></li>
-              <li><a aria-label="youtube" href="#"></a></li>
-              <li><a aria-label="twitter" href="#"></a></li>
-              <li><a aria-label="pinterest" href="#"></a></li>
-              <li><a aria-label="instagram" href="#"></a></li>
+            <a href="#" aria-label="home">
+              <svg class="icon" width="146" height="24">
+                <use xlink:href="images/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="social-list" role="list" aria-label="social links">
+              <li><a aria-label="faceBook" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+                </svg>
+              </a></li>
+              <li><a aria-label="youtube" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-youtube"></use>
+                </svg>
+              </a></li>
+              <li><a aria-label="twitter" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+              <li><a aria-label="pinterest" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
+                </svg>
+              </a></li>
+              <li><a aria-label="instagram" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+                </svg>
+              </a></li>
             </ul>
           </div>
 
