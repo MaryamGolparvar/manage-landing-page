@@ -548,6 +548,7 @@ p[data-width="wide"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 998;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
@@ -642,6 +643,7 @@ input:where([type="text"], [type="email"]) {
 /* social list */
 
 .social-list {
+  grid-area: social;
   display: flex;
   gap: var(--size-600);
 }
