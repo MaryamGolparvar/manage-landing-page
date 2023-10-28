@@ -29,7 +29,6 @@
             aria-controls="primary-navigation"
             aria-expanded="false"
           >
-           
             <span class="visually-hidden">menu</span>
           </button>
           <nav class="primary-navigation" id="primary-navigation">
@@ -52,7 +51,7 @@
     </header>
 
     <main>
-      <section class="hero | text-center-sm-only  padding-block-900">
+      <section class="hero | text-center-sm-only padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div class="flow">
@@ -137,11 +136,11 @@
         </div>
       </section>
 
-      <section class="carousel | padding-block-700 text-center">
+      <section class="carousel | padding-block-900 text-center">
         <h2 class="fs-secondary-heading fw-bold padding-block-700">
           What they've said
         </h2>
-        <ul class="slider padding-block-700" aria-label="slider" >
+        <ul class="slider padding-block-700" aria-label="slider">
           <li>
             <img src="images/avatar-anisha.png" alt="" />
             <h3 class="fw-bold">Anisha Li</h3>
@@ -176,7 +175,9 @@
         </button>
       </section>
 
-      <section class="cta | bg-accent-400 text-Neutral-100 padding-block-900">
+      <section
+        class="cta | margin-top-900 bg-accent-400 text-Neutral-100 padding-block-900"
+      >
         <div class="container">
           <div class="even-columns vertical-align-center">
             <div>
@@ -199,63 +200,55 @@
       class="primary-footer | padding-block-700 bg-Neutral-900 text-Neutral-100"
     >
       <div class="container">
-        <div class="primary-footer-wrapper">
-          <div class="primary-footer-logo-social">
-            <a href="#" aria-label="home">
-              <svg class="icon" width="146" height="24">
-                <use xlink:href="images/logo.svg#logo"></use>
-              </svg>
-            </a>
-            <ul class="social-list" role="list" aria-label="social links">
-              <li>
-                <a aria-label="faceBook" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="images/social-icons.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a aria-label="youtube" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="images/social-icons.svg#icon-youtube"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a aria-label="twitter" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="images/social-icons.svg#icon-twitter"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a aria-label="pinterest" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="images/social-icons.svg#icon-pinterest"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a aria-label="instagram" href="#">
-                  <svg class="social-icon">
-                    <use
-                      xlink:href="images/social-icons.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="primary-footer__wrapper">
+          <a class="primary-footer__logo" href="#" aria-label="home">
+            <svg class="icon" width="146" height="24">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="social-list" role="list" aria-label="social links">
+            <li>
+              <a aria-label="faceBook" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-label="youtube" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-label="twitter" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-label="pinterest" href="#">
+                <svg class="social-icon">
+                  <use
+                    xlink:href="images/social-icons.svg#icon-pinterest"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-label="instagram" href="#">
+                <svg class="social-icon">
+                  <use
+                    xlink:href="images/social-icons.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
 
-          <div class="primary-footer-nav">
+          <div class="primary-footer__nav">
             <nav class="footer-nav">
               <ul
                 class="flow"
@@ -274,15 +267,15 @@
             </nav>
           </div>
 
-          <div class="primary-footer-form">
-            <form action="">
-              <input type="email" placeholder="Updates in your inbox..." />
-              <button type="button" class="button" data-shadow="none">
-                Go
-              </button>
-            </form>
-            <p>Copyright 2020. All Rights Reserved</p>
-          </div>
+          <!-- <div class="primary-footer-form"> -->
+          <form class="primary-footer__form" action="">
+            <input type="email" placeholder="Updates in your inbox..." />
+            <button type="button" class="button" data-shadow="none">Go</button>
+          </form>
+          <p class="primary-footer__copyright">
+            Copyright 2020. All Rights Reserved
+          </p>
+          <!-- </div> -->
         </div>
       </div>
     </footer>
