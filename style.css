@@ -79,7 +79,8 @@ html:focus-within {
 }
 html,
 body {
-  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 /* Set core body defaults */
 body {
@@ -303,7 +304,7 @@ p[data-width="wide"] {
   color: var(--clr-accent-300);
 }
 
-/* image width blod bg */
+/* HERO */
 
 @media (max-width:47em) {
   .hero__image{
@@ -333,6 +334,31 @@ p[data-width="wide"] {
      width:45%;
       }
   }
+
+/* sales points */
+.sales-point-blog{
+  position: relative;
+}
+.sales-point-blog::before{
+  content: url("images/bg-tablet-pattern.svg");
+  position: absolute;
+  bottom: 120%;
+  left: 70%;
+  z-index: -1;
+  width:100px;  
+  zoom: 40%;
+  
+} 
+@media (min-width:47em) {
+  .sales-point-blog::before{
+    top: 42%;
+    left: -450px;
+    z-index: -1;
+    width:100px;  
+    zoom: 70%;
+    
+  } 
+}
 
 
 /* numbered items */
