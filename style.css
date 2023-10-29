@@ -288,6 +288,8 @@ p[data-width="wide"] {
   color: var(--clr-Neutral-100);
   background-color: var(--clr-accent-400);
   box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
+  transition-property: background-color;
+  transition-duration: 150ms;
 }
 
 .button[data-type="inverted"] {
